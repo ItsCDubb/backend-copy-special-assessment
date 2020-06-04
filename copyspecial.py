@@ -7,7 +7,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 
 # give credits
-__author__ = "???"
+__author__ = "Chris Warren"
 
 import re
 import os
@@ -26,16 +26,13 @@ def get_special_paths(dirname):
         ]
     return path_list
 
-
 def copy_to(path_list, dest_dir):
     print('copy_to fired:', path_list, dest_dir)
     return
 
-
 def zip_to(path_list, dest_zip):
     print('zip_to fired:', path_list, dest_zip)
     return
-
 
 def main(args):
     """Main driver code for copyspecial."""
@@ -69,7 +66,6 @@ def main(args):
     # exit(1).
 
     # Your code here: Invoke (call) your functions
-
 
 if __name__ == "__main__":
     main(sys.argv[1:])
