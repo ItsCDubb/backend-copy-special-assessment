@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 """Copyspecial Assignment"""
 
 # Copyright 2010 Google Inc.
