@@ -19,7 +19,7 @@ import zipfile
 from io import StringIO
 
 # devs: change this to soln.copyspecial to test solution
-PKG_NAME = 'soln.copyspecial'
+PKG_NAME = 'copyspecial'
 SPL_REGEX = re.compile(r'__(\w+)__')
 
 
@@ -107,7 +107,7 @@ class TestCopyspecial(unittest.TestCase):
         actual_path_list = self.module.get_special_paths('.')
         expected_path_list = [
             os.path.abspath(os.path.join(os.getcwd(), f))
-            for f in(os.listdir('.'))
+            for f in (os.listdir('.'))
             if SPL_REGEX.search(f)
             ]
         self.assertIsInstance(
